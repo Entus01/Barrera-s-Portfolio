@@ -1,0 +1,5 @@
+.about {
+    grid-area: content;
+    background-color: #fff3e0;
+    padding: 20px;
+}

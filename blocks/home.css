@@ -1,0 +1,5 @@
+.home {
+    grid-area: content;
+    background-color: #e0f7fa;
+    padding: 20px;
+}
