@@ -113,10 +113,69 @@
 
         <section class="projects" id="projects">
           <h2 class="projects__title">Projects</h2>
-          <div class="project">
-            <h3 class="project__name"></h3>
-            <p class="project__description"></p>
-            <a class="project__link" href="#" target="_blank">View Project</a>
+          <div class="projects__container">
+            <div class="project">
+              <h3 class="project__name">Around The U.S.</h3>
+              <img
+                class="project__image"
+                src="./images/Around-US-general-view.png"
+                alt="Around The U.S. Project Screenshot"
+              />
+              <p class="project__description">
+                This project focuses on developing a web page that allows users
+                to personalize a profile interactively. Key features include:
+              </p>
+              <ul class="project__features">
+                <li>
+                  Customization of profile picture, name, and personal
+                  description.
+                </li>
+                <li>Option to add images to the profile.</li>
+                <li>Ability to like images.</li>
+                <li>
+                  Functionality to delete images. View images in full size when
+                  clicking on them.
+                </li>
+                <li>
+                  Use of modal windows to perform changes:
+                  <ul>
+                    <li>
+                      Forms display a "saving" state while data is being sent.
+                    </li>
+                    <li>
+                      Once changes are confirmed, the modal window closes
+                      automatically.
+                    </li>
+                    <li>
+                      When reopening a modal, fields are empty except for the
+                      profile name and description modal, which shows the
+                      current user values.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Form validation:
+                  <ul>
+                    <li>Fields must contain valid information.</li>
+                    <li>
+                      Otherwise, error messages are displayed and the form
+                      cannot be submitted until corrected.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <p class="project__description">
+                All changes are sent via APIs to a server, which stores the
+                updates.
+              </p>
+              <a
+                class="project__link"
+                href="https://entus01.github.io/web_project_around_es/"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
           </div>
         </section>
 

@@ -1,14 +1,31 @@
 .projects {
-    display: block;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+  display: block;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .projects__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.0rem;
-    margin: 0;
-    padding: 60px 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 60px 80px 20px;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "proj1 image1"
+    "proj1 image1"
+    "proj1 image1"
+    "image2 proj2"
+    "image2 proj2"
+    "image2 proj2";
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 80px 60px;
 }
