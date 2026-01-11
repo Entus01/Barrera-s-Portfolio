@@ -1,9 +1,4 @@
 .content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "nav content content"
-    "nav content content"
-    ". footer footer";
+  position: relative;
+  display: block;
 }
