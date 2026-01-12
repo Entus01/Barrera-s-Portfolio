@@ -15,12 +15,12 @@
     <title>Miguel's PortFolio</title>
     <link rel="stylesheet" href="./page/styles.css" />
   </head>
+
   <body>
     <div class="page">
       <header class="header">
         <nav class="nav">
           <ul class="nav__list nav__list_location">
-            <li><a class="nav__link" href="#home">Home</a></li>
             <li><a class="nav__link" href="#about">About</a></li>
             <li><a class="nav__link" href="#skills">Skills</a></li>
             <li><a class="nav__link" href="#projects">Projects</a></li>
@@ -52,19 +52,6 @@
       </header>
 
       <main class="content">
-        <section class="home" id="home">
-          <h2 class="home__title">Full-Stack Portfolio</h2>
-          <p class="home__description">
-            Welcome to my portfolio, where you'll find an overview of who I am
-            as a Full Stack Web Developer, the skills and technologies I use to
-            build responsive and scalable applications, the projects I've
-            created that showcase my approach to problem-solving and design, and
-            the ways you can connect with me to collaborate. My goal is to give
-            you a clear picture of both my technical expertise and my passion
-            for crafting user-friendly digital experiences.
-          </p>
-        </section>
-
         <section class="about" id="about">
           <h2 class="about__title">About Me</h2>
           <p class="about__description">
@@ -113,80 +100,103 @@
 
         <section class="projects" id="projects">
           <h2 class="projects__title">Projects</h2>
-          <div class="projects__container">
-            <div class="project">
-              <h3 class="project__name">Around The U.S.</h3>
+          <div class="project">
+            <h3 class="project__name">Around The U.S.</h3>
+            <div class="project__descriptions-container">
+              <p class="project__description">Purpose & Concept</p>
+              <p class="project__description">
+                “Around The U.S.” is a responsive web app inspired by social
+                media platforms, where users can edit their profile, update
+                their avatar, and share locations with images and captions.
+                Built with HTML5, CSS3, and modern JavaScript, it emphasizes
+                clean design, usability, and dynamic interaction.
+              </p>
+
+              <p class="project__description">Key Features</p>
+              <ul class="project__features-list">
+                <li class="project__feature-item">
+                  Editable profile with avatar updates
+                </li>
+                <li class="project__feature-item">
+                  Interactive cards for places with likes and delete options
+                </li>
+                <li class="project__feature-item">
+                  Add new locations dynamically through forms
+                </li>
+                <li class="project__feature-item">
+                  Pop-up modals with smooth transitions
+                </li>
+                <li class="project__feature-item">
+                  Responsive layout using flexbox and grid
+                </li>
+              </ul>
+              <p class="project__description">What It Demonstrates</p>
+              <p class="project__description">
+                This project highlights my ability to design and implement
+                interactive front-end applications, apply real-time validation,
+                and manage dynamic DOM updates. It showcases critical thinking
+                under pressure and adaptability across devices.
+              </p>
+            </div>
+            <div class="project__images-container">
               <img
                 class="project__image"
                 src="./images/Around-US-general-view.png"
                 alt="Around The U.S. Project Screenshot"
               />
-              <p class="project__description">
-                This project focuses on developing a web page that allows users
-                to personalize a profile interactively. Key features include:
-              </p>
-              <ul class="project__features">
-                <li>
-                  Customization of profile picture, name, and personal
-                  description.
-                </li>
-                <li>Option to add images to the profile.</li>
-                <li>Ability to like images.</li>
-                <li>
-                  Functionality to delete images. View images in full size when
-                  clicking on them.
-                </li>
-                <li>
-                  Use of modal windows to perform changes:
-                  <ul>
-                    <li>
-                      Forms display a "saving" state while data is being sent.
-                    </li>
-                    <li>
-                      Once changes are confirmed, the modal window closes
-                      automatically.
-                    </li>
-                    <li>
-                      When reopening a modal, fields are empty except for the
-                      profile name and description modal, which shows the
-                      current user values.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Form validation:
-                  <ul>
-                    <li>Fields must contain valid information.</li>
-                    <li>
-                      Otherwise, error messages are displayed and the form
-                      cannot be submitted until corrected.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <p class="project__description">
-                All changes are sent via APIs to a server, which stores the
-                updates.
-              </p>
-              <a
-                class="project__link"
-                href="https://entus01.github.io/web_project_around_es/"
-                target="_blank"
-                >View Project</a
-              >
             </div>
+            <a
+              class="project__link"
+              href="https://entus01.github.io/web_project_around_es/"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project">
+            <h3 class="project__name"></h3>
+            <p class="project__description">Coming Soon...</p>
+            <a class="project__link" href="#" target="_blank">View Project</a>
+          </div>
+          <div class="project">
+            <h3 class="project__name"></h3>
+            <p class="project__description">Coming Soon...</p>
+            <a class="project__link" href="#" target="_blank">View Project</a>
           </div>
         </section>
 
         <section class="contact" id="contact">
-          <h2>Contact</h2>
-          <p>Get in touch with me.</p>
+          <h2 class="contact__title">Contact</h2>
+          <p class="contact__info">Get in touch with me.</p>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <strong>Email:</strong>
+              <a
+                class="contact__link"
+                href="mailto:miguelsbarrera1995@outlook.com"
+                >miguelsbarrera1995@outlook.com</a
+              >
+            </li>
+            <li class="contact__item">
+              <strong>Phone:</strong>
+              <a class="contact__link" href="tel:+573174232943"
+                >+57 317 423 2943</a
+              >
+            </li>
+            <li class="contact__item">
+              <strong>LinkedIn:</strong>
+              <a
+                class="contact__link"
+                href="https://www.linkedin.com/in/miguel-santiago-barrera-castro-web-dev/"
+                target="_blank"
+                >linkedin.com/in/miguel-santiago-barrera-castro-web-dev/</a
+              >
+            </li>
+          </ul>
         </section>
       </main>
 
-      <footer>
-        <p>&copy; 2026 Barrera's Portfolio. All rights reserved.</p>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2026 Barrera's Portfolio. All rights reserved.</p>
       </footer>
     </div>
     <script src="./page/index.js" type="module"></script>

@@ -1,7 +1,8 @@
 .projects {
-  display: block;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 5, 10);
   color: rgb(255, 255, 255);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .projects__title {
@@ -13,19 +14,60 @@
   padding: 60px 80px 20px;
 }
 
-.projects__container {
+.project {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(2, (100% - 160px) / 2);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
-    "proj1 image1"
-    "proj1 image1"
-    "proj1 image1"
-    "image2 proj2"
-    "image2 proj2"
-    "image2 proj2";
+    "title title"
+    "description image"
+    "link link";
+  gap: 10px;
+  margin: 0;
+  padding: 60px 80px 20px;
+}
+
+.project__name {
+  grid-area: title;
+  font-size: 1.5rem;
+  margin: 20px 40px;
+}
+
+.project__descriptions-container {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 20px 80px 60px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.project__description {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.project__image-container {
+  grid-area: image;
+}
+
+.project__image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project__link {
+  grid-area: link;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.project__link:hover {
+  color: #007acc;
 }
